@@ -1,0 +1,67 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('business_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    text-align: center;
+}
+
+/* Logo Styling */
+.logo {
+    display: block;
+    margin: 10px auto 5px; /* Adjusted spacing */
+    height: 1500px;
+    width: auto;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeInScale 1s ease-out forwards;
+}
+
+@keyframes fadeInScale {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(0.9); }
+}
+
+/* Main Content */
+.container {
+    padding: 10px; /* Reduced padding */
+}
+
+.content-section {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 10px auto;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(15px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    color: #ff1493;
+    border-bottom: 2px solid #ff1493;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* Hover Effects */
+.content-section:hover {
+    box-shadow: 0 6px 12px rgba(255, 20, 147, 0.2);
+    transform: scale(1.01);
+    transition: all 0.3s ease-in-out;
+}
